@@ -26,7 +26,7 @@
  *     http://www.opennms.com/
  *******************************************************************************/
 
-package org.opennms.oce.integrations.opennms.config;
+package org.opennms.integrations.test.config;
 
 import java.util.List;
 
