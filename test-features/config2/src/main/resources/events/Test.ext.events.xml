@@ -1,4 +1,37 @@
 <events xmlns="http://xmlns.opennms.org/xsd/eventconf">
+
+   <event>
+        <priority>20</priority>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.43.29.10</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/vendor/3Com/traps/a3ComFddiMACNeighborChangeEvent</uei>
+      <event-label>PLUGIN EVENT 2</event-label>
+      <descr>&lt;p>This event is generated when the Hold function
+ assumes the state holding-prm or holding-sec. The current state is: %parm[#2]%, where
+ 1 indicates holding is not implemented, 2 indicates not holding, 3 indicates
+ holding on primary and 4 indicates holding on secondary. The station ID is: %parm[#1]%.&lt;/p>
+ &lt;table>&lt;tr>&lt;td>&lt;b>
+ fddimibSMTStationId&lt;/b>&lt;/td>&lt;td>%parm[#1]%
+ &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
+ a3ComFddiSMTHoldState&lt;/b>&lt;/td>&lt;td>%parm[#2]%
+ &lt;/td>&lt;td>&lt;p;>not-implemented(1) not-holding(2) holding-prm(3) holding-sec(4)&lt;/p>
+ &lt;/td;>&lt;/tr>&lt;/table></descr>
+      <logmsg dest="logndisplay">&lt;p>PLUGIN EVENT 2.&lt;/p></logmsg>
+      <severity>Warning</severity>
+   </event>
+
     <event>
         <priority>20</priority>
         <mask>
